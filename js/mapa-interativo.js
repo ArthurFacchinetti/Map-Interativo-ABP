@@ -119,7 +119,88 @@ function selectRoomOnMap(roomElement) {
 // Dados Mock para Teste
 function getRoomDetails(roomId) {
     const mockData = {
-        // Térreo (andar-0.svg)
+        // Térreo (andar-0.html)
+        'deposito': {
+            name: 'Depósito',
+            disciplina: '-',
+            docente: '-',
+            curso: '-',
+            nivel: '-',
+            numero: '',
+            status: 'Restrita'
+        },
+        'copa-e-reunioes': {
+            name: 'Copa e Sala de Reuniões',
+            disciplina: '-',
+            docente: '-',
+            curso: '-',
+            nivel: '-',
+            numero: '',
+            status: 'Restrita'
+        },
+        'sec-administrativa': {
+            name: 'Secretaria Admin',
+            disciplina: '-',
+            docente: '-',
+            curso: '-',
+            nivel: '-',
+            numero: '',
+            status: 'Restrita'
+        },
+        'sec-academica': {
+            name: 'Secretaria Acadêmica',
+            disciplina: '-',
+            docente: '-',
+            curso: '-',
+            nivel: '-',
+            numero: '',
+            status: 'Restrita'
+        },
+        'admin': {
+            name: 'Salas Administrativas',
+            disciplina: '-',
+            docente: '-',
+            curso: '-',
+            nivel: '-',
+            numero: '',
+            status: 'Restrita'
+        },
+        'lab-desenho-topologia': {
+            name: 'Laboratório de Desenho e Topografia',
+            disciplina: 'Topografia',
+            docente: 'Prof. João Silva',
+            curso: 'Engenharia Civil',
+            nivel: 'Superior',
+            numero: '02',
+            status: 'Disponível'
+        },
+        'lab-quimica-amb': {
+            name: 'Laboratório de Química Ambiental',
+            disciplina: 'Química Ambiental',
+            docente: 'Profa. Ana Souza',
+            curso: 'Engenharia Ambiental',
+            nivel: 'Superior',
+            numero: '',
+            status: 'Disponível'
+        },
+        'lab-analises-ambientais': {
+            name: 'Laboratório de Análises Ambientais',
+            disciplina: 'Análises Ambientais',
+            docente: 'Prof. Carlos Mendes',
+            curso: 'Engenharia Ambiental',
+            nivel: 'Superior',
+            numero: '01',
+            status: 'Disponível'
+        },
+        'lab-microbio-ambietal': {
+            name: 'Laboratório de Microbiologia Ambiental',
+            disciplina: 'Microbiologia',
+            docente: 'Profa. Maria Clara',
+            curso: 'Engenharia Ambiental',
+            nivel: 'Superior',
+            numero: '03',
+            status: 'Disponível'
+        },
         'lab-info-01': {
             name: 'Laboratório de Informática 01',
             disciplina: 'Desenvolvimento Web',
@@ -172,25 +253,25 @@ function getRoomDetails(roomId) {
             name: 'Biblioteca',
             disciplina: 'Área de Estudos',
             docente: '-',
-            curso: 'Todos os Cursos',
-            nivel: 'Todos os Níveis',
+            curso: '-',
+            nivel: '-',
             status: 'Disponível'
         },
         'secretaria': {
             name: 'Secretaria Acadêmica',
-            disciplina: 'Administrativo',
+            disciplina: '-',
             docente: '-',
-            curso: 'Todos os Cursos',
-            nivel: 'Administrativo',
-            status: 'Disponível'
+            curso: '-',
+            nivel: '-',
+            status: '-'
         },
         'coordenacao': {
             name: 'Coordenação',
-            disciplina: 'Administrativo',
+            disciplina: '-',
             docente: '-',
-            curso: 'Todos os Cursos',
-            nivel: 'Administrativo',
-            status: 'Disponível'
+            curso: '-',
+            nivel: '-',
+            status: '-'
         },
 
         // Primeiro Andar (andar-1.svg)
@@ -238,7 +319,7 @@ function getRoomDetails(roomId) {
             name: 'Sala dos Professores',
             disciplina: 'Área dos Docentes',
             docente: '-',
-            curso: 'Todos os Cursos',
+            curso: '-',
             nivel: 'Docentes',
             status: 'Disponível'
         },
@@ -272,8 +353,8 @@ function getRoomDetails(roomId) {
             name: 'Auditório',
             disciplina: 'Eventos e Palestras',
             docente: '-',
-            curso: 'Todos os Cursos',
-            nivel: 'Todos os Níveis',
+            curso: '-',
+            nivel: '-',
             status: 'Disponível'
         },
         'lab-inovacao': {
@@ -348,6 +429,10 @@ function updateRoomVisual(roomId) {
     // Adiciona nova classe de status
     room.querySelector(".status-badge").classList.add(`status-${statusFormat}`);
     room.querySelector(".status-badge").textContent = details.status;
+
+    room.querySelector(".nome-sala").textContent = details.name;
+
+    room.querySelector(".numero-sala").textContent = details.numero ? details.numero : "";
 }
 
 // Atualiza a visualização de todas as salas
