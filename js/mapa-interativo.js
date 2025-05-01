@@ -324,9 +324,6 @@ function configurarEventos() {
             
             // Fecha o dropdown
             floorDropdown.classList.remove('show');
-            
-            // Carrega o mapa do andar selecionado
-            carregarMapa(andar);
         });
     });
 
@@ -359,29 +356,6 @@ function updateAllRoomsVisual() {
     rooms.forEach(room => {
         updateRoomVisual(room.dataset.roomId);
     });
-}
-
-// Função para exportar dados para CSV
-function exportarCSV() {
-    // Aqui você implementará a lógica para exportar os dados das salas
-    const csv = gerarCSV();
-    
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'salas.csv';
-    link.click();
-    
-    console.log('Dados exportados com sucesso!');
-}
-
-// Função auxiliar para gerar CSV
-function gerarCSV() {
-    // Aqui você implementará a lógica para gerar o conteúdo do CSV
-    const headers = ['Nome', 'Tipo', 'Capacidade', 'Professor', 'Recursos'];
-    const rows = []; // Aqui você adicionará os dados das salas
-    
-    return [headers, ...rows].map(row => row.join(',')).join('\n');
 }
 
 // Função auxiliar para obter informações da sala
