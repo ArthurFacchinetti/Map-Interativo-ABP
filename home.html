@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - FATEC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/profile-dropdown.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar de navegação -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo" id="collapse-btn" style="cursor: pointer;">
+                    <img src="image/CPS-removebg-preview.png" alt="Logo CPS">
+                </div>
+            </div>
+            
+            <div class="sidebar-item">
+                <a href="home.html" class="active">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-item">
+                <a href="docentes.html">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Docentes</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-item">
+                <a href="grade-horarios.html">
+                    <i class="fas fa-book"></i>
+                    <span>Aulas</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-item">
+                <a href="mapa-interativo.html">
+                    <i class="fas fa-door-open"></i>
+                    <span>Salas</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-item">
+                <a href="semestres.html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Semestres</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-item">
+                <a href="disciplinas.html">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Disciplinas</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-item">
+                <a href="cursos.html">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Cursos</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="logo-container">
+                    <img src="image/Fatec-removebg-preview.png" alt="FATEC" class="header-logo">
+                </div>
+                
+                <div class="header-actions">
+                    <div class="notification-container">
+                        <button class="notification-btn" title="Notificações">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-count">0</span>
+                        </button>
+                        <div class="notification-dropdown">
+                            <div class="notification-list">
+                                <!-- As notificações serão inseridas dinamicamente aqui -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="user-profile" id="userProfile">
+                        <div class="profile-trigger">
+                            <div class="user-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="user-info">
+                                <div class="user-name">Administrador</div>
+                                <div class="user-role">Gerente do Sistema</div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        
+                        <div class="profile-dropdown">
+                            <div class="dropdown-header">
+                                <div class="user-avatar-large">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="user-info-large">
+                                    <div class="user-name">Administrador</div>
+                                    <div class="user-email">admin@fatec.sp.gov.br</div>
+                                </div>
+                            </div>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <a href="admin.html" class="dropdown-item">
+                                <i class="fas fa-shield-alt"></i>
+                                Painel Administrativo
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-user-cog"></i>
+                                Gerenciar Perfil
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-key"></i>
+                                Alterar Senha
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-shield-alt"></i>
+                                Permissões
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-history"></i>
+                                Histórico de Atividades
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <a href="#" class="dropdown-item text-danger">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Sair
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <button id="toggle-menu" class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="breadcrumb">
+                <div class="breadcrumb-item active">
+                    <i class="fas fa-home"></i> &nbsp; Início
+                </div>
+            </div>
+
+            <!-- Área de conteúdo administrativo -->
+            <div class="admin-container">
+                <h2 class="section-title">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Dashboard
+                </h2>
+                
+                <!-- Dashboard com estatísticas -->
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total de Docentes</h3>
+                            <p class="stat-number">150</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Salas Disponíveis</h3>
+                            <p class="stat-number">45</p>
+                            <p class="stat-change">12 em uso</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Disciplinas Ativas</h3>
+                            <p class="stat-number">78</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Cursos Ativos</h3>
+                            <p class="stat-number">12</p>
+                            <p class="stat-change">Todos em andamento</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Alunos Ativos</h3>
+                            <p class="stat-number">1.250</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Atividades Recentes -->
+                    <div class="recent-activities">
+                        <h2>Atividades Recentes</h2>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-marker"></div>
+                                <div class="activity-content">
+                                    <p class="activity-time">Há 5 minutos</p>
+                                    <p class="activity-text">Professor João Silva atualizou notas da disciplina Cálculo I</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-marker"></div>
+                                <div class="activity-content">
+                                    <p class="activity-time">Há 15 minutos</p>
+                                    <p class="activity-text">Nova sala reservada para Laboratório de Programação</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-marker"></div>
+                                <div class="activity-content">
+                                    <p class="activity-time">Há 30 minutos</p>
+                                    <p class="activity-text">Novo aviso postado no mural do curso de DSM</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-marker"></div>
+                                <div class="activity-content">
+                                    <p class="activity-time">Há 1 hora</p>
+                                    <p class="activity-text">Atualização no calendário acadêmico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Próximos Eventos -->
+                    <div class="upcoming-events">
+                        <h3><i class="fas fa-calendar-alt"></i> Próximos Eventos</h3>
+                        <div class="events-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">15</span>
+                                    <span class="month">MAR</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Início do Semestre</h4>
+                                    <p>Primeiro dia de aulas do novo semestre</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">20</span>
+                                    <span class="month">MAR</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Reunião de Colegiado</h4>
+                                    <p>Discussão sobre novas diretrizes</p>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">25</span>
+                                    <span class="month">MAR</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Palestra Técnica</h4>
+                                    <p>Desenvolvimento de Software na Prática</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/profile-dropdown.js"></script>
+    <script src="js/notifications.js"></script>
+</body>
+</html>
