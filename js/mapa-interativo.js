@@ -126,8 +126,7 @@ function getRoomDetails(roomId) {
             docente: '-',
             curso: '-',
             nivel: '-',
-            numero: '',
-            status: 'Restrita'
+            status: 'Manutenção'
         },
         'copa-e-reunioes': {
             name: 'Copa e Sala de Reuniões',
@@ -135,7 +134,6 @@ function getRoomDetails(roomId) {
             docente: '-',
             curso: '-',
             nivel: '-',
-            numero: '',
             status: 'Restrita'
         },
         'sec-administrativa': {
@@ -144,7 +142,6 @@ function getRoomDetails(roomId) {
             docente: '-',
             curso: '-',
             nivel: '-',
-            numero: '',
             status: 'Restrita'
         },
         'sec-academica': {
@@ -153,7 +150,6 @@ function getRoomDetails(roomId) {
             docente: '-',
             curso: '-',
             nivel: '-',
-            numero: '',
             status: 'Restrita'
         },
         'admin': {
@@ -162,43 +158,38 @@ function getRoomDetails(roomId) {
             docente: '-',
             curso: '-',
             nivel: '-',
-            numero: '',
             status: 'Restrita'
         },
-        'lab-desenho-topologia': {
+        'sala-02': {
             name: 'Laboratório de Desenho e Topografia',
             disciplina: 'Topografia',
             docente: 'Prof. João Silva',
             curso: 'Engenharia Civil',
             nivel: 'Superior',
-            numero: '02',
             status: 'Disponível'
         },
-        'lab-quimica-amb': {
+        'sala-04': {
             name: 'Laboratório de Química Ambiental',
             disciplina: 'Química Ambiental',
             docente: 'Profa. Ana Souza',
             curso: 'Engenharia Ambiental',
             nivel: 'Superior',
-            numero: '',
             status: 'Disponível'
         },
-        'lab-analises-ambientais': {
+        'sala-01': {
             name: 'Laboratório de Análises Ambientais',
             disciplina: 'Análises Ambientais',
             docente: 'Prof. Carlos Mendes',
             curso: 'Engenharia Ambiental',
             nivel: 'Superior',
-            numero: '01',
             status: 'Disponível'
         },
-        'lab-microbio-ambietal': {
+        'sala-03': {
             name: 'Laboratório de Microbiologia Ambiental',
             disciplina: 'Microbiologia',
             docente: 'Profa. Maria Clara',
             curso: 'Engenharia Ambiental',
             nivel: 'Superior',
-            numero: '03',
             status: 'Disponível'
         },
         'lab-info-01': {
@@ -276,7 +267,7 @@ function getRoomDetails(roomId) {
 
         // Primeiro Andar (andar-1.svg)
         'sala-101': {
-            name: 'Sala 101',
+            name: 'Sala de Aula',
             disciplina: 'Cálculo',
             docente: 'Prof. Ricardo Alves',
             curso: 'Desenvolvimento de Software Multiplataforma',
@@ -284,7 +275,7 @@ function getRoomDetails(roomId) {
             status: 'Manutenção'
         },
         'sala-102': {
-            name: 'Sala 102',
+            name: 'Sala de Aula',
             disciplina: 'Inglês Técnico',
             docente: 'Profa. Sarah Johnson',
             curso: 'Desenvolvimento de Software Multiplataforma',
@@ -292,7 +283,55 @@ function getRoomDetails(roomId) {
             status: 'Disponível'
         },
         'sala-103': {
-            name: 'Sala 103',
+            name: 'Sala de Aula',
+            disciplina: 'Gestão de Projetos',
+            docente: 'Prof. Marcos Paulo',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-104': {
+            name: 'Sala de Aula',
+            disciplina: 'Gestão de Projetos',
+            docente: 'Prof. Marcos Paulo',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-105': {
+            name: 'Sala de Aula',
+            disciplina: 'Gestão de Projetos',
+            docente: 'Prof. Marcos Paulo',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-106': {
+            name: 'Sala de Aula',
+            disciplina: 'Gestão de Projetos',
+            docente: 'Prof. Marcos Paulo',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-107': {
+            name: 'Sala de Aula',
+            disciplina: 'Gestão de Projetos',
+            docente: 'Prof. Marcos Paulo',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-108': {
+            name: 'Sala de Aula',
+            disciplina: 'Gestão de Projetos',
+            docente: 'Prof. Marcos Paulo',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-110': {
+            name: 'Sala Maker',
             disciplina: 'Gestão de Projetos',
             docente: 'Prof. Marcos Paulo',
             curso: 'Desenvolvimento de Software Multiplataforma',
@@ -326,7 +365,7 @@ function getRoomDetails(roomId) {
 
         // Segundo Andar (andar-2.svg)
         'sala-201': {
-            name: 'Sala 201',
+            name: 'Sala de Áudio e Vídeo',
             disciplina: 'Engenharia de Software',
             docente: 'Prof. Lucas Mendes',
             curso: 'Desenvolvimento de Software Multiplataforma',
@@ -334,7 +373,7 @@ function getRoomDetails(roomId) {
             status: 'Ocupada'
         },
         'sala-202': {
-            name: 'Sala 202',
+            name: 'Sala de Aula',
             disciplina: 'Matemática Discreta',
             docente: 'Profa. Patricia Lima',
             curso: 'Desenvolvimento de Software Multiplataforma',
@@ -342,7 +381,63 @@ function getRoomDetails(roomId) {
             status: 'Disponível'
         },
         'sala-203': {
-            name: 'Sala 203',
+            name: 'Laboratório Univesp',
+            disciplina: 'Sistemas Operacionais',
+            docente: 'Prof. Gabriel Costa',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-204': {
+            name: 'Sala de Aula',
+            disciplina: 'Sistemas Operacionais',
+            docente: 'Prof. Gabriel Costa',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-205': {
+            name: 'Laboratório de Informática',
+            disciplina: 'Sistemas Operacionais',
+            docente: 'Prof. Gabriel Costa',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-206': {
+            name: 'Sala de Aula',
+            disciplina: 'Sistemas Operacionais',
+            docente: 'Prof. Gabriel Costa',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-207': {
+            name: 'Laboratório de Informática',
+            disciplina: 'Sistemas Operacionais',
+            docente: 'Prof. Gabriel Costa',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-208': {
+            name: 'Laboratório de Biologia',
+            disciplina: 'Sistemas Operacionais',
+            docente: 'Prof. Gabriel Costa',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-209': {
+            name: 'Laboratório de Informática',
+            disciplina: 'Sistemas Operacionais',
+            docente: 'Prof. Gabriel Costa',
+            curso: 'Desenvolvimento de Software Multiplataforma',
+            nivel: 'Superior Tecnológico',
+            status: 'Ocupada'
+        },
+        'sala-210': {
+            name: 'Sala de Áudio e Vídeo',
             disciplina: 'Sistemas Operacionais',
             docente: 'Prof. Gabriel Costa',
             curso: 'Desenvolvimento de Software Multiplataforma',
@@ -431,8 +526,6 @@ function updateRoomVisual(roomId) {
     room.querySelector(".status-badge").textContent = details.status;
 
     room.querySelector(".nome-sala").textContent = details.name;
-
-    room.querySelector(".numero-sala").textContent = details.numero ? details.numero : "";
 }
 
 // Atualiza a visualização de todas as salas

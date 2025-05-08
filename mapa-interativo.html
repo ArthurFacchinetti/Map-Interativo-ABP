@@ -169,6 +169,11 @@
                 <div class="mapa-header">
                     <h2>MAPA INTERATIVO</h2>
                     <div class="mapa-actions">
+                        <button class="btn-search"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-file-export"></i>
+                            Exportar PDF
+                        </button>
                         <div class="floor-selector">
                             <select id="floor-selector" class="btn btn-floor" onchange="loadFloorMap(this.value)">
                                 <option value="0">TÉRREO</option>
@@ -188,7 +193,6 @@
             </div>
         </main>
     </div>
-
     <script src="js/script.js"></script>
     <script src="js/mapa-interativo.js"></script>
     <script src="js/profile-dropdown.js"></script>

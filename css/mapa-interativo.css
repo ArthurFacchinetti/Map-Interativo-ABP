@@ -1,6 +1,7 @@
 /* Estilos para o Mapa Interativo */
 :root {
     --conteiner-background-color: #cccbcb;
+    --map-content-width: 1177px;
 } 
 
 .mapa-container {
@@ -16,7 +17,7 @@
 /* Mapa interativo em si */
 .map-content {
     height: 500px;
-    max-width: 1177px;
+    max-width: var(--map-content-width);
     border-radius: 8px;
     background-color: var(--conteiner-background-color);
 }
@@ -533,4 +534,83 @@
 .btn-export-csv i {
     font-size: 16px;
 } 
+
+.btn-search {
+    padding: 10px 15px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background: linear-gradient(45deg, var(--primary-dark), var(--primary));
+    box-shadow: 0 4px 8px rgba(227, 6, 19, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Pop-up */
+.pop-up {
+    position: absolute;
+    height: 225px;
+    width: var(--map-content-width);
+
+    transform: translateY(-250px);
+
+    z-index: 10000;
+
+    background-color: brown;
+padding: 10px;
+margin: 0 2px;
+border-radius: 4px;
+
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+display: flex;
+flex-direction: column;
+
+}
+
+.pop-up-nome-sala h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.pop-up:hover {
+    transform: scale(none) !important;
+}
+
+.pop-up-geral-container {
+    display: flex;
+    flex-direction: row;
+
+    flex: 1;
+}
+
+.pop-up-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+
+    height: 100%;
+}
+
+.pop-up-logo-container {
+    max-height: 100%;
+}
+
+.pop-up-logo {
+    /* border-radius: 50%; */
+    background-color: aqua;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+}
 
