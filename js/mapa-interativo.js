@@ -502,9 +502,6 @@ function configurarEventos() {
             floorDropdown.classList.remove('show');
         });
     });
-
-    // Evento do botão exportar
-    document.querySelector('.btn-export').addEventListener('click', exportarCSV);
 }
 
 // Atualiza a visualização de uma sala específica
