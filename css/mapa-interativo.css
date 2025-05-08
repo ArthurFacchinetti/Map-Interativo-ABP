@@ -573,7 +573,7 @@ flex-direction: column;
 }
 
 .pop-up-nome-sala h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #333;
     text-align: left !important;
@@ -612,5 +612,14 @@ flex-direction: column;
     height: 100%;
     aspect-ratio: 1 / 1;
     margin: 0;
+}
+
+.pop-up-nome-prof {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0;
 }
 
